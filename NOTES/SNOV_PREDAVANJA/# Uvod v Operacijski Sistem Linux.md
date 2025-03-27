@@ -1,7 +1,7 @@
 # Uvod v Operacijski Sistem Linux
 
 ## Osnovne Funkcionalnosti Operacijskih Sistemov
-![Osnovne Funkcionalnosti](https://via.placeholder.com/600x200?text=Osnovne+Funkcionalnosti)
+
 - **Upravljanje s procesi** (ang. process management)
 - **Upravljanje z napravami** (ang. device management)
 - **Upravljanje s pomnilnikom** (ang. memory management)
@@ -11,7 +11,7 @@
 ---
 
 ## Vsebina
-![Vsebina](https://via.placeholder.com/600x200?text=Vsebina)
+
 1. **Predmet Operacijski Sistemi**
 2. **Uvod v Operacijske Sisteme**
 3. **Operacijski Sistem Linux**
@@ -23,7 +23,7 @@
 ---
 
 ## Uvod v Operacijski Sistem Linux
-![Linux Overview](https://via.placeholder.com/600x200?text=Linux+Overview)
+
 - Linux je varianta operacijskega sistema UNIX.
 - UNIX je eden najstarejših operacijskih sistemov, znan po zanesljivosti in varnosti (od leta 1969).
 - UNIX je bil razvit za delo s terminali in je zasnovan za delo v omrežjih.
@@ -33,7 +33,6 @@
 ---
 
 ## Zgodovinski Razvoj Linuxa
-![Linux History](https://via.placeholder.com/600x200?text=Linux+History)
 - **Linus Torvalds** je razvil prvo verzijo Linuxa (0.01) leta 1991.
   - Temelji na idejah iz sistema MINIX (UNIX sistem).
   - Monolitski sistem z 9300 vrsticami kode v C-ju in 950 vrsticami v asemblerju.
@@ -47,7 +46,7 @@
 ---
 
 ## Linux Jedro (ang. Linux Kernel)
-![Linux Kernel](https://via.placeholder.com/600x200?text=Linux+Kernel)
+
 - Jedro Linuxa je nadzornik operacijskega sistema.
 - Odgovorno za dodeljevanje pomnilnika in procesorskega časa.
 - Verzija jedra je označena kot **A.B.C-D**:
@@ -59,7 +58,7 @@
 ---
 
 ## Linux Distribucije
-![Linux Distributions](https://via.placeholder.com/600x200?text=Linux+Distributions)
+
 - Linux distribucija je operacijski sistem, zgrajen na osnovi Linux jedra in sistema za upravljanje s paketi.
 - Trenutno obstaja več kot 600 distribucij (300 v aktivnem razvoju).
 - **Popularne distribucije**:
@@ -71,13 +70,13 @@
 ---
 
 ## Terminal
-![Terminal](https://via.placeholder.com/600x200?text=Terminal)
+
 - Terminal je vmesnik ukazne vrstice, ki omogoča interakcijo z operacijskim sistemom.
 
 ---
 
 ## Pregledovalniki in Urejevalniki Tekstov v Linuxu
-![Text Editors](https://via.placeholder.com/600x200?text=Text+Editors)
+
 - **Vim**:
   - Urejevalnik v ukazni vrstici.
   - Ni prijazen za začetnike, a zelo priljubljen med naprednimi uporabniki.
@@ -96,5 +95,5 @@
 ---
 
 ## Dodatno
-![Choose Editor](https://via.placeholder.com/600x200?text=Choose+Your+Editor)
+
 - Oglejte si predlagane urejevalnike in izberite tistega, ki vam najbolj ustreza.
