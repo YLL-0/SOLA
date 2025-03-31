@@ -8,12 +8,10 @@
 
 int main()
 {
-    int n = 8;
-
-    if ((int)sqrt(n) % 2 == 0)
-    {
-
-    }
-
+    double n;
+    printf("Enter a number: ");
+    scanf("%lf", &n);
+    
+    
     return 0;
 }
