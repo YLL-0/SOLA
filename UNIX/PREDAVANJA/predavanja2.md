@@ -328,3 +328,113 @@ Procesor deluje kot avtomat, ki (ko je enkrat vklopljen) zaporedno izvaja ukaze 
 - Vrednosti določenih zastavic, ki so odvisne od rezultata, se shranjujejo v register stanja:
   - S tem označimo uspešnost/neuspešnost izvedenega ukaza.
   - Ta informacija se nato uporabi s strani operacijskega sistema.
+
+
+
+
+## Organizacija sodobnega računalniškega sistema
+
+![UNIX/PREDAVANJA/organizacijasodobnegarac.png](organizacijasodobnegarac.png)
+
+### Sodobni računalniški sistemi
+
+Sodobni računalniški sistemi vključujejo tudi številčne vhodno/izhodne enote (V/I) poleg dosedanjih komponent Von Neumannovega modela: pomnilnik, procesor in vodilo.
+
+### Centralne procesorske enote in krmilniki naprav
+
+- Ena ali več centralnih procesorskih enot (CPE) ter krmilniki naprav (device controllers) so povezani prek skupnega vodila (bus) in imajo s tem dostop do deljenega pomnilnika (shared memory).  
+- CPE premikajo podatke iz glavnega pomnilnika (ali v glavni pomnilnik) v lokalne medpomnilnike (ali iz lokalnih medpomnilnikov).
+
+### Naloga krmilnikov naprav
+
+- Vsak krmilnik naprave je odgovoren predvsem za eno vrsto naprav.
+  - Ima svoj lokalni medpomnilnik (local buffer) in nekaj registrov z določeno funkcijo.
+  - Odgovoren je za prenos podatkov iz V/I naprav do medpomnilnika.
+
+---
+
+## Izvajanje V/I operacij in prekinitev
+
+### Začetek V/I operacij
+
+- Gonilnik naprave najprej naloži vsebino v register krmilnika naprave.
+
+### Preverjanje in določanje nalog
+
+- Hkrati krmilnik preveri vsebino registrov in določi, katero nalogo mora izvesti (npr. prebrati znak iz tipkovnice).
+
+### Proces prenosa podatkov
+
+- Vhod/izhod podatkov se generira neposredno na napravi v lokalnem medpomnilniku krmilnika naprave.
+- Krmilnik naprave obvesti gonilnik naprave, ko zaključi prenos podatkov.
+
+### Obveščanje z interrupcijami
+
+- Obveščanje poteka s pomočjo prekinitve (interrupt).
+- Prekinitve so eden najpomembnejših mehanizmov za delovanje računalniškega sistema.
+
+---
+
+## Časovni potek prekinitve
+
+![Časovni potek prekinitve](casovnipotekprekinitve.png)
+
+---
+
+## Prekinitev v računalniškem sistemu
+
+### Strojna oprema in prekinitev
+
+- Strojna oprema lahko pošlje prekinitev kadarkoli:
+  - To se izvede s pomočjo električnega signala prek sistemskega vodila.
+  - S tem se obvesti CPE ali katera druga naprava.
+
+### Programsko generirane prekinitve
+
+- Izjema (trap ali exception) je prekinitev, ki jo ustvari programska oprema (software-generated interrupt) in je povzročena zaradi napake ali zahteve uporabnika.
+- Operacijski sistem temelji na principu prekinitev (interrupt-driven).
+
+---
+
+## Prekinitveni vektor
+
+### Prenos kontrole na prekinitev
+
+- Ko je delovanje CPE prekinjeno, se kontrola prenese na modul za prekinitev (interrupt service routine).
+- To se izvede s pomočjo prekinitvenega vektorja (interrupt vector), ki vsebuje začetne naslove (v pomnilniku) vseh servisnih rutin.
+  - Servisne rutine so programi, ki se izvedejo, ko nastane prekinitev.
+
+### Vrnitev kontrole
+
+- Po koncu izvajanja se kontrola vrne CPE, ki nadaljuje z izvajanjem prekinjenega programa.
+  - Za ta namen mora prekinjevalni sistem shraniti naslov prekinjenega ukaza (interrupted instruction).
+
+![Prekinitveni vektor](prekinitvenivektor.png)
+
+---
+
+## Implementacija prekinitev znotraj računalniškega sistema
+
+### Interrupt request linija
+
+- Strojna oprema CPE ima linijo za oddajanje zahtevkov za prekinitev (interrupt request line).
+- CPE preverja to linijo po vsakem izvedenem ukazu.
+
+### Postopek ob prejemu prekinitve
+
+Ko CPE zazna, da je krmilnik oddal signal prek prekinjevalne linije:
+- Prebere številko prekinitve.
+- Skoči na servisni prekinjevalni program (interrupt-handling routine), ki se nahaja v pomnilniku.
+- Različni segmenti programske kode določajo, katera dejanja je treba izvesti za vsako vrsto prekinitve.
+- Nato začne izvajati prekinjevalni program.
+
+### Nadzornik prekinitve (Interrupt Handler)
+
+- **Shranjevanje stanja:** Operacijski sistem ohrani stanje CPE s shranjevanjem stanja registrov in programskega števca (program counter).
+- **Ugotavljanje vzroka prekinitve:** 
+  - Pripravljenost vhodno/izhodne naprave (polling interrupt).
+  - Vektorske prekinitve (vectored interrupt).
+- **Izvedba prekinitve:** Izvede ustrezno rutino prekinitve.
+- **Vrnitev v prvotno stanje:** Poskrbi, da se CPE vrne v stanje pred prekinitvijo.
+
+![Cikel prekinitve](cikelprekinitve.png)
