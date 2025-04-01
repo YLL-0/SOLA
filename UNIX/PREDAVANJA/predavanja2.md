@@ -239,3 +239,58 @@ Operacijo, ki jo izvaja aritmetično-logična enota, določa kontrolna enota, ki
 - Kam se pošlje rezultat izvedene operacije.  
 
 V skladu s tem aktivira le določene povezave na notranjih vodilih.
+
+---
+
+## Kako deluje procesor
+![alt text](procesor.png)
+### Predpostavke:
+- V pomnilniku imamo programsko kodo, ki je zapisana kot niz ukazov v pravilnem vrstnem redu za izvajanje.
+- Ta niz ukazov, ki jih lahko procesor izvede, imenujemo **strojna programska koda**.
+- V **programski števec** postavimo naslov prvega ukaza strojne kode.
+
+### Delovanje procesorja:
+Procesor deluje kot avtomat, ki (ko je enkrat vklopljen) zaporedno izvaja ukaze iz strojnega programa.
+
+### Procesor ponavlja naslednje korake:
+1. Pridobi iz pomnilnika ukaz, na katerega kaže programski števec.
+2. Dekodira pridobljeni ukaz in določi, katero operacijo mora izvesti ALU.
+3. Poveča vrednost programskega števca, da kaže na naslednji ukaz, ki bo izveden.
+4. Določi lokacijo operandov in lokacijo rezultatov operacije.
+5. Operande napelje na ALU in izvede operacijo.
+6. Rezultat operacije shrani na določeno lokacijo.
+
+### Procesor ta cikel ponavlja, dokler je vklopljen.
+
+
+
+# Faze delovanja procesorja: prevzem ukaza:
+
+- V prvi fazi se izvaja prevze ukaza (FETCH)
+
+- Vsebina programskega stevca se prenasa v naslvnio medregikster
+
+- Kontrolna enota iniciira aktivnost prenasanja ukaza iz pomnilnika
+
+
+# Faze delovanja procesorja: Delovanje ukaza:
+
+- V drugi fazi kontrolna enota izvaja dekodiranje ukaza (decoding)
+
+- Na osnovi mnozice bitov ukaza (operaciska koda) kontrolna enota ugotovi, katero operacijo je treba izvesti
+
+- Poveca vrednost programskega steca tako, da kaze na naslednji ukaz
+
+- Posilja signale ALU in jo obvesti, katero operacijo je treba izvesti
+
+- Na osnovi druge mnozice bitov (naslovni del ukaza) ugotovi, katerih registrov pridejo operandi, kam je treba shraniti rezultat in katera interna vodila aktivirati 
+
+# Faze delovanja procesorja: izvajanje operacij:
+
+- V tretji fazi izvajajo operacije v ALU (execution)
+
+- ALU izvaja operacijo in shranjuje rezultat preko vodila S_3 v odredisce
+
+- Vrednosti dolocenih zastavic, ki so odvisne od pridobljenega rezultata, se shranjujejo v register stanja:
++ s tem oznacujemo uspesnost/neuspesnost izvedenega ukaza
++ to informacijo potem izkoristi operaciski sistem za svoje delovanje
