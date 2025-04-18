@@ -17,14 +17,29 @@ int guess() {
   scanf("%d", &g);
   return g;
 }
-void game(int x) {
-  int bool = 0;
 
+void takingTurns(int x) {
+  int count = 0;
+  if (x < 10) {
+  }
+}
+
+void game() {
+  int bool = 0;
+  int gue;
   while (bool == 0) {
+    int gue = guess();
+    if (gue != 0) {
+      printf("NOT a 0");
+
+    } else {
+      printf("ITS 0");
+    }
   }
 }
 
 int main() {
-  guess();
+  game();
+
   return 0;
 }
