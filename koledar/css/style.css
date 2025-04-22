@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e5e5e5;
+  /* Light gray background */
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.kontrole {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.legenda {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.legendaElement {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vzorec {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+}
+
+.kalendarska-tabela {
+  margin: 25px auto;
+  width: 100%;
+  max-width: 800px;
+  /* Increased from 600px */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+th,
+td {
+  padding: 15px;
+  /* Increased from 10px */
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 1.2rem;
+  /* Increased font size */
+}
+
+th {
+  background-color: #194285;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  /* Slightly larger headers */
+}
+
+.prazno {
+  background-color: #f9f9f9;
+}
+
+.vikend {
+  background-color: #517824;
+}
+
+.praznik {
+  background-color: #5cb85c;
+  color: white;
+  font-weight: bold;
+}
+
+.danes {
+  border: 3px solid #4a89dc;
+  /* Thicker border */
+  color: #4a89dc;
+  font-weight: bold;
+}
+
+#gumbDanes {
+  background-color: #4a89dc;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  /* Larger button */
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#gumbDanes:hover {
+  background-color: #3a77c5;
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: #333;
+  font-size: 1.1rem;
+  /* Larger text in dropdowns */
+}
+
+@media (max-width: 850px) {
+  .kalendarska-tabela {
+    max-width: 95%;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .kontrole {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .legenda {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-size: 1rem;
+  }
+}

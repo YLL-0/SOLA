@@ -1,64 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sl">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dynamic Calendar</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Koledar</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="container">
-    <h1>Dynamic Monthly Calendar</h1>
+  <h1>Koledar</h1>
 
-    <div class="controls">
-      <label for="month">Month:</label>
-      <select id="month">
-        <option value="0">January</option>
-        <option value="1">February</option>
-        <option value="2">March</option>
-        <option value="3">April</option>
-        <option value="4">May</option>
-        <option value="5">June</option>
-        <option value="6">July</option>
-        <option value="7">August</option>
-        <option value="8">September</option>
-        <option value="9">October</option>
-        <option value="10">November</option>
-        <option value="11">December</option>
-      </select>
+  <div class="kontrole">
+    <label for="mesec">Mesec:</label>
+    <select id="mesec">
+      <option value="0">Januar</option>
+      <option value="1">Februar</option>
+      <option value="2">Marec</option>
+      <option value="3">April</option>
+      <option value="4">Maj</option>
+      <option value="5">Junij</option>
+      <option value="6">Julij</option>
+      <option value="7">Avgust</option>
+      <option value="8">September</option>
+      <option value="9">Oktober</option>
+      <option value="10">November</option>
+      <option value="11">December</option>
+    </select>
 
-      <label for="year">Year:</label>
-      <input type="number" id="year" value="2023" min="2000" max="2100">
+    <label for="leto">Leto:</label>
+    <select id="leto">
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+    </select>
 
-      <button id="generate">Generate Calendar</button>
-    </div>
-
-    <div class="calendar-container">
-      <table id="calendar">
-        <thead>
-          <tr>
-            <th>Mon</th>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
-            <th>Sat</th>
-            <th>Sun</th>
-          </tr>
-        </thead>
-        <tbody id="calendar-body">
-          <!-- Calendar days will be inserted here by JavaScript -->
-        </tbody>
-      </table>
-    </div>
-
-    <div class="legend">
-      <div class="legend-item"><span class="weekend"></span> Weekend</div>
-      <div class="legend-item"><span class="holiday"></span> Holiday</div>
-    </div>
+    <button id="gumbDanes">Danes</button>
   </div>
+
+  <div class="legenda">
+    <span class="legendaElement"><span class="vzorec vikend"></span> Vikend</span>
+    <span class="legendaElement"><span class="vzorec praznik"></span> Praznik</span>
+    <span class="legendaElement"><span class="vzorec danes"></span> Današnji dan</span>
+  </div>
+
+  <div id="koledar" class="kalendarska-tabela"></div>
 
   <script src="js/script.js"></script>
 </body>
