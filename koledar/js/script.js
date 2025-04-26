@@ -1,4 +1,3 @@
-// Slovenski prazniki
 const prazniki = {
   '2023-1-1': 'Novo leto',
   '2023-1-2': 'Novo leto',
@@ -46,20 +45,13 @@ const prazniki = {
   '2025-12-26': 'Dan samostojnosti in enotnosti'
 };
 
-// Dnevi v tednu
 const dneviVTednu = ["Pon", "Tor", "Sre", "Čet", "Pet", "Sob", "Ned"];
 
-// IMMEDIATE EXECUTION - Create calendar as soon as possible
-// This ensures the table appears immediately on page load
 inicializirajKoledar();
 
-/**
- * Funkcija za inicializacijo koledarja
- */
+// Funkcija za inicializacijo koledarja
 function inicializirajKoledar() {
-  // Check if document is already loaded
   if (document.readyState === 'loading') {
-    // If not loaded, wait for DOMContentLoaded event
     document.addEventListener('DOMContentLoaded', function() {
       nastaviPoslusalce();
       nastaviTrenutniDatumVIzbirniku();
