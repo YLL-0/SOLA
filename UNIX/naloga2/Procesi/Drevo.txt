@@ -1,0 +1,31 @@
+systemd-+-2*[agetty]
+        |-apache2---5*[apache2]
+        |-cron
+        |-dbus-daemon
+        |-init-systemd(Ub-+-SessionLeader---Relay(2696)---sh---sh---sh---node-+-node-+-2*[node---6*[{node}]]
+        |                 |                                                   |      |-node-+-node---6*[{node}]
+        |                 |                                                   |      |      `-6*[{node}]
+        |                 |                                                   |      `-12*[{node}]
+        |                 |                                                   |-node---12*[{node}]
+        |                 |                                                   |-node-+-2*[zsh]
+        |                 |                                                   |      `-12*[{node}]
+        |                 |                                                   `-10*[{node}]
+        |                 |-SessionLeader---Relay(2719)---node---6*[{node}]
+        |                 |-SessionLeader---Relay(2728)---node---6*[{node}]
+        |                 |-SessionLeader---Relay(2866)---sh---sh---node-+-sh
+        |                 |                                              `-6*[{node}]
+        |                 |-SessionLeader---Relay(19779)---zsh---bash-+-pstree
+        |                 |                                           `-tee
+        |                 |-init---{init}
+        |                 |-login---zsh
+        |                 `-{init-systemd(Ub}
+        |-polkitd---3*[{polkitd}]
+        |-rsyslogd---3*[{rsyslogd}]
+        |-systemd---(sd-pam)
+        |-systemd-journal
+        |-systemd-logind
+        |-systemd-resolve
+        |-systemd-timesyn---{systemd-timesyn}
+        |-systemd-udevd
+        |-unattended-upgr---{unattended-upgr}
+        `-wsl-pro-service---7*[{wsl-pro-service}]
