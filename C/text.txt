@@ -1,1 +1,13 @@
-This is some text for a assigment i am doing
+This is a short line.
+Here is another line that is less than 80 characters.
+This line is getting longer but still under the 80 character limit that we're looking for.
+This line is exactly 80 characters long, so it should not be included in the output...........
+This line is definitely longer than 82 characters because I'm going to keep typing until I'm well past the limit. This sentence should appear in your program's output since it exceeds the specified threshold.
+Short again.
+And here's another very long line thatThis is a short line
+Here is another line that is less than 80 characters.
+This line is getting longer but still under the 80 character limit that we're looking for.
+This line is exactly 80 characters long, so it should not be included in the output...........
+This line is definitely longer than 80 characters because I'm going to keep typing until I'm well past the limit. This sentence should appear in your program's output since it exceeds the specified threshold
+Short again.
+And here's another very long line that should be printed by your program because it contains more than 80 characters. Your program needs to detect and print only these longer lines. should be printed by your program because it contains more than 80 characters. Your program needs to detect and print only these longer lines.
