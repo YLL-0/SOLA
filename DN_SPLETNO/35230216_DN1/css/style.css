@@ -1,0 +1,174 @@
+body {
+  /* Osnovni stil za celotno stran */
+  font-family: Arial, sans-serif;
+  background-color: #e5e5e5; /* Svetlo siva barva ozadja */
+  color: #333; /* Temno siva barva besedila */
+  margin: 0;
+  padding: 20px;
+  /* Uporaba flexbox za centriranje vsebine */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Zagotovi, da stran pokriva celotno višino pogleda */
+}
+
+h1 {
+  /* Stil za naslov koledarja */
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 2.5rem; /* Velika velikost pisave za glavno naslov */
+}
+
+.kontrole {
+  /* Stil za območje z meseci, leti in gumbom Danes */
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Prostor med posameznimi kontrolami */
+  width: 100%;
+}
+
+.legenda {
+  /* Stil za območje legende */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1.2rem; /* Velikost pisave za legendo */
+}
+
+.legendaElement {
+  /* Stil za posamezni element legende */
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Prostor med vzorcem in besedilom */
+}
+
+.vzorec {
+  /* Stil za barvni kvadratek v legendi */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd; /* Svetlo siv okvir */
+}
+
+.kalendarska-tabela {
+  /* Stil za vsebnik koledarske tabele */
+  margin: 25px auto;
+  width: 100%;
+  max-width: 800px; /* Omejitev širine tabele */
+}
+
+table {
+  /* Stil za tabelarični prikaz koledarja */
+  width: 100%;
+  border-collapse: collapse; /* Združi robove celic */
+  margin: 0 auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Senca za 3D učinek */
+  background-color: white;
+}
+
+th,
+td {
+  /* Stil za celice z dnevi */
+  padding: 15px; /* Odmik znotraj celic */
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 1.2rem; /* Velikost pisave za dneve */
+}
+
+th {
+  /* Stil za celice z dnevi v tednu */
+  background-color: #194285; /* Temno modra barva */
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem; /* Malce večja pisava za glave */
+}
+
+.prazno {
+  /* Stil za prazne celice (ni del trenutnega meseca) */
+  background-color: #f9f9f9; /* Zelo svetla siva */
+}
+
+.vikend {
+  /* Stil za vikend dni */
+  background-color: #517824; /* Zelena barva za vikende */
+}
+
+.praznik {
+  /* Stil za praznične dni */
+  background-color: #5cb85c; /* Svetlejša zelena za praznike */
+  color: white;
+  font-weight: bold;
+}
+
+.danes {
+  /* Stil za označitev današnjega dne */
+  border: 3px solid #4a89dc; /* Debelejši moder okvir */
+  color: #4a89dc;
+  font-weight: bold;
+}
+
+#gumbDanes {
+  /* Stil za gumb "Danes" */
+  background-color: #4a89dc; /* Modra barva */
+  color: white;
+  border: none;
+  padding: 12px 20px; /* Velikost gumba */
+  cursor: pointer; /* Pokaže, da je element klikabilen */
+  border-radius: 5px; /* Zaobljeni robovi */
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#gumbDanes:hover {
+  /* Stil za gumb "Danes" ob prehodu miške */
+  background-color: #3a77c5; /* Temnejša modra */
+}
+
+select {
+  /* Stil za spustne menije (mesec, leto) */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: #333;
+  font-size: 1.1rem; /* Velikost pisave v spustnih menijih */
+}
+
+@media (max-width: 850px) {
+  /* Prilagoditve za srednje velike zaslone */
+  .kalendarska-tabela {
+    max-width: 95%;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Prilagoditve za manjše zaslone (mobilni telefoni) */
+  .kontrole {
+    flex-direction: column; /* Kontrole v stolpcu namesto v vrsti */
+    align-items: center;
+  }
+
+  .legenda {
+    flex-wrap: wrap; /* Omogoči prelom v več vrstic */
+    justify-content: center;
+    gap: 15px;
+  }
+
+  th,
+  td {
+    padding: 8px; /* Manjši odmik na manjših zaslonih */
+    font-size: 1rem; /* Manjša pisava */
+  }
+}

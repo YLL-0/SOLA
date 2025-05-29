@@ -1,0 +1,181 @@
+* {
+    /* Osnovne nastavitve za vse elemente */
+    box-sizing: border-box; /* Širina in višina elementa vključuje padding in border */
+    margin: 0; /* Odstrani privzete zunanje odmike */
+    padding: 0; /* Odstrani privzete notranje odmike */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nastavi pisave */
+}
+
+body {
+    /* Osnovni stil za telo strani */
+    background-color: #f5f7fa; /* Svetlo siva barva ozadja */
+    color: #333; /* Temno siva barva besedila */
+    line-height: 1.6; /* Razmik med vrsticami besedila */
+    padding: 20px; /* Notranji odmik od roba okna */
+}
+
+.container {
+    /* Glavni vsebnik strani */
+    max-width: 900px; /* Največja širina vsebnika */
+    margin: 0 auto; /* Centriranje vsebnika na sredino strani */
+    background: white; /* Belo ozadje vsebnika */
+    padding: 30px; /* Notranji odmik za vsebino */
+    border-radius: 8px; /* Zaobljeni vogali */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Senca za 3D učinek */
+}
+
+h1 {
+    /* Oblikovanje glavnega naslova */
+    color: #2c3e50; /* Temno modra barva */
+    margin-bottom: 25px; /* Odmik pod naslovom */
+    padding-bottom: 10px; /* Odmik pod besedilom */
+    border-bottom: 2px solid #eaeaea; /* Črta pod naslovom */
+    font-weight: 500; /* Debelina pisave */
+}
+
+form {
+    /* Oblikovanje obrazca */
+    margin-top: 20px; /* Odmik nad obrazcem */
+}
+
+label {
+    /* Oblikovanje oznak za vnosna polja */
+    display: block; /* Oznaka je samostojen blok element */
+    margin-top: 12px; /* Odmik nad oznako */
+    font-weight: 500; /* Debelina pisave */
+    color: #555; /* Barva besedila */
+}
+
+input, textarea, select {
+    /* Oblikovanje vnosnih polj */
+    width: 100%; /* Polna širina v svojem vsebniku */
+    padding: 10px; /* Notranji odmik */
+    margin-top: 5px; /* Odmik nad poljem */
+    margin-bottom: 15px; /* Odmik pod poljem */
+    border: 1px solid #ddd; /* Svetlo siv rob */
+    border-radius: 4px; /* Zaobljeni vogali */
+    font-size: 15px; /* Velikost pisave */
+}
+
+input:focus, textarea:focus, select:focus {
+    /* Oblikovanje vnosnih polj ko so aktivna */
+    outline: none; /* Odstrani privzet obrobo */
+    border-color: #3498db; /* Modra barva obrobe */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3); /* Svetleč učinek */
+}
+
+button {
+    /* Oblikovanje gumbov */
+    background-color: #3498db; /* Modra barva ozadja */
+    color: white; /* Belo besedilo */
+    border: none; /* Brez obrobe */
+    padding: 12px 20px; /* Notranji odmik */
+    font-size: 16px; /* Velikost pisave */
+    border-radius: 4px; /* Zaobljeni vogali */
+    cursor: pointer; /* Kazalec miške kot roka */
+    margin-top: 10px; /* Odmik nad gumbom */
+    transition: background-color 0.2s; /* Animacija spremembe barve */
+}
+
+button:hover {
+    /* Učinek ob prehodu miške nad gumbom */
+    background-color: #2980b9; /* Temnejša modra */
+}
+
+.success, .error {
+    /* Skupno oblikovanje za sporočila o uspehu in napakah */
+    padding: 10px; /* Notranji odmik */
+    border-radius: 4px; /* Zaobljeni vogali */
+    margin-bottom: 20px; /* Odmik pod sporočilom */
+}
+
+.success {
+    /* Oblikovanje sporočila o uspehu */
+    background-color: #d4edda; /* Svetlo zelena barva ozadja */
+    color: #155724; /* Temno zelena barva besedila */
+    border: 1px solid #c3e6cb; /* Zelena obroba */
+}
+
+.error {
+    /* Oblikovanje sporočila o napaki */
+    background-color: #f8d7da; /* Svetlo rdeča barva ozadja */
+    color: #721c24; /* Temno rdeča barva besedila */
+    border: 1px solid #f5c6cb; /* Rdeča obroba */
+}
+
+table {
+    /* Oblikovanje tabele */
+    width: 100%; /* Polna širina v svojem vsebniku */
+    border-collapse: collapse; /* Združi robove celic */
+    margin: 20px 0; /* Zunanji odmik */
+    background-color: white; /* Belo ozadje */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Rahla senca */
+}
+
+th {
+    /* Oblikovanje glave tabele */
+    background-color: #f2f5f8; /* Svetlo siva barva ozadja */
+    color: #2c3e50; /* Temno modra barva besedila */
+    font-weight: 600; /* Debelina pisave */
+    text-align: left; /* Poravnava besedila */
+    padding: 12px; /* Notranji odmik */
+    border-bottom: 2px solid #e4e9f0; /* Siva črta pod glavo */
+}
+
+td {
+    /* Oblikovanje celic v tabeli */
+    padding: 12px; /* Notranji odmik */
+    border-bottom: 1px solid #eaeaea; /* Svetlo siva črta pod celico */
+}
+
+tr:hover {
+    /* Učinek ob prehodu miške nad vrstico */
+    background-color: #f9f9f9; /* Zelo svetlo siva barva ozadja */
+}
+
+a {
+    /* Oblikovanje povezav */
+    color: #3498db; /* Modra barva */
+    text-decoration: none; /* Brez podčrtavanja */
+    transition: color 0.2s; /* Animacija spremembe barve */
+}
+
+a:hover {
+    /* Učinek ob prehodu miške nad povezavo */
+    color: #2980b9; /* Temnejša modra */
+    text-decoration: underline; /* Podčrtano besedilo */
+}
+
+.link-button {
+    /* Oblikovanje povezave, ki izgleda kot gumb */
+    display: inline-block; /* Prikazuje se kot blok element */
+    margin-top: 20px; /* Odmik nad povezavo */
+    padding: 10px 15px; /* Notranji odmik */
+    background-color: #f2f5f8; /* Svetlo siva barva ozadja */
+    border-radius: 4px; /* Zaobljeni vogali */
+    color: #2c3e50; /* Temno modra barva besedila */
+    text-decoration: none; /* Brez podčrtavanja */
+    transition: all 0.2s; /* Animacija sprememb */
+}
+
+.link-button:hover {
+    /* Učinek ob prehodu miške nad povezavo-gumbom */
+    background-color: #e4e9f0; /* Temnejša siva */
+    text-decoration: none; /* Brez podčrtavanja */
+}
+
+@media (max-width: 768px) {
+    /* Prilagoditve za manjše zaslone (tablet in telefon) */
+    .container {
+        padding: 20px; /* Manjši notranji odmik */
+    }
+    
+    input, textarea, select, button {
+        font-size: 14px; /* Manjša pisava */
+    }
+    
+    table {
+        display: block; /* Prikaži tabelo kot blok element */
+        overflow-x: auto; /* Omogoči vodoravno drsanje */
+    }
+}

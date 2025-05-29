@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+  <!-- Meta podatki za pravilno kodiranje in odzivno oblikovanje -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koledar</title>
+  <!-- Povezava na CSS datoteko za oblikovanje -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Naslov aplikacije -->
+  <h1>Koledar</h1>
+
+  <!-- Kontrolni elementi za izbiro meseca, leta in gumb za današnji dan -->
+  <div class="kontrole">
+    <label for="mesec">Mesec:</label>
+    <select id="mesec">
+      <!-- Možnosti za izbiro meseca (od 0 do 11) -->
+      <option value="0">Januar</option>
+      <option value="1">Februar</option>
+      <option value="2">Marec</option>
+      <option value="3">April</option>
+      <option value="4">Maj</option>
+      <option value="5">Junij</option>
+      <option value="6">Julij</option>
+      <option value="7">Avgust</option>
+      <option value="8">September</option>
+      <option value="9">Oktober</option>
+      <option value="10">November</option>
+      <option value="11">December</option>
+    </select>
+
+    <label for="leto">Leto:</label>
+    <select id="leto">
+      <!-- Možnosti za izbiro leta -->
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+    </select>
+
+    <!-- Gumb za prikaz današnjega dne -->
+    <button id="gumbDanes">Danes</button>
+  </div>
+
+  <!-- Legenda, ki pojasnjuje različne označbe dni v koledarju -->
+  <div class="legenda">
+    <span class="legendaElement"><span class="vzorec vikend"></span> Vikend</span>
+    <span class="legendaElement"><span class="vzorec praznik"></span> Praznik</span>
+    <span class="legendaElement"><span class="vzorec danes"></span> Današnji dan</span>
+  </div>
+
+  <!-- Vsebnik za prikaz koledarja, ki ga napolni JavaScript -->
+  <div id="koledar" class="kalendarska-tabela"></div>
+
+  <!-- Povezava na JavaScript datoteko za funkcionalnost -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
