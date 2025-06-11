@@ -41,3 +41,4 @@ $('#text').slideUp("slow",function(){
 $('#text').fadeToggle("slow", function(){
 
     })
+$(this) -- trenutni element

@@ -1,0 +1,82 @@
+<!<!DOCTYPE <html>
+
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <title>
+         jQuery tutorial
+      </title>
+
+   </head>
+
+   <body>
+      <div id="about"
+         style="height: 150px; width: 300px; background-color: lightblue; text-align: center; padding: 10px">
+      </div>
+      <button type="button" id="show">Show</button>
+      <button type="button" id="hide">Hide</button>
+      <button type="button" id="toggle">Toggle</button>
+      <button type="button" id="getjson">GetJson</button>
+      <button type="button" id="getgame">GetGame</button>
+      <input type="text" class="power" value="">
+
+      <script>
+         $(document).ready(function () {
+            $('#about').click(function () {
+               if ($(this).html === 'you clicked me') {
+                  $(this).html('Click me again');
+               }
+               else {
+                  $(this).html('you clicked me');
+               }
+            });
+            $('#about').hover(function () {
+               $(this).css('background-color', 'lightgreen');
+            });
+            $('#about').mouseleave(function () {
+               $(this).css('background-color', 'lightblue');
+            });
+
+
+            // Show:
+            $('#show').click(function () {
+               $('#about').show();
+            });
+            // Hide:
+            $('#hide').click(function () {
+               $('#about').hide();
+            });
+            // Toggle:
+            $('#toggle').click(function () {
+               $('#about').toggle();
+            });
+            // Typing:
+            $('.power').keyup(function () {
+               $('#about').html($(this).val());
+            });
+
+            // AJAX:
+            $('#getjson').click(function () {
+               $.ajax({
+                  url: 'games.json', success: function (result) {
+                     $('#about').html(JSON.stringify(result, null, 4));
+                  }
+               });
+
+            });
+            $('#getgame').click(function () {
+               $.ajax({
+                  url: 'games.json', success: function (result) {
+                     var game = result.games[0].title;
+                     $('#about').html(game);
+                  }
+               });
+
+            });
+
+
+         });
+
+      </script>
+   </body>
+
+   </html>
