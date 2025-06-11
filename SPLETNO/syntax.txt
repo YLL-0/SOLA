@@ -1,0 +1,43 @@
+$("selector").method('parameter');
+
+$("p").addClass("blue-background");
+
+$('.power') -- class
+$('#about') -- id
+$('div') -- all the divs
+$('div.power') -- div w class power
+$('footer a.boss') -- all links w class boss in footer
+
+
+events:
+$('button').click(function(){
+    do something w prass of buttne
+    })
+
+$('div.myform').submit(function({
+    do something when submited
+    }))
+
+$('#main').hover(function(){
+    mouse hover s id main
+    })
+
+$('.power').keyup(function(){
+    when user typing
+    })
+
+animations:
+
+$('p').slideToggle("slow");
+
+$('p').slideToggle(1000, function(){
+    do something when animation is done
+    })
+
+$('#text').slideUp("slow",function(){
+    do smthing after animation
+    })
+    
+$('#text').fadeToggle("slow", function(){
+
+    })

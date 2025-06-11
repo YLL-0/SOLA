@@ -1,0 +1,19 @@
+{
+    "games": [
+        {
+            "title": "Witcher 3",
+            "genre": "RPG",
+            "developer": "CD Project RED"
+        },
+        {
+            "title": "Mass Effect 3",
+            "genre": "RPG",
+            "developer": "Bioware"
+        },
+        {
+            "title": "Heroes of Might & Magic 3",
+            "genre": "Turn Based strategy",
+            "developer": "New World Computing"
+        }
+    ]
+}

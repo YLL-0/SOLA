@@ -88,7 +88,7 @@ function nastaviTrenutniDatumVIzbirniku() {
       mesecIzbirnik.value = danes.getMonth();
     }
 
-    // Nastavi izbrano leto na trenutno leto
+    // Natavi izbrano leto na trenutno leto
     const letoIzbirnik = document.getElementById('leto');
     if (letoIzbirnik) {
       const leto = danes.getFullYear().toString();
