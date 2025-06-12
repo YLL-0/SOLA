@@ -1,25 +1,30 @@
-<script type="text/javascript">
-    function getcontent() {
-        // Creating intens of HTTP request object
-        var xmlHttp = new XMLHttpRequest();
-        // Specify the method and the url
-        xmlHttp.open("GET", "game-list.php", false);
+<html>
 
-        xmlHttp.send(null);
+<body>
 
-        //xmlHttp.responseText = game-list.php
-        var element = document.getElementById("content");
-        element.innerHTML = xmlHttp.responseText;
+    <?php
+    pre_p($_POST);
+    if (isset($_POST['submit'])) {
+    };
+
+    ?>
+
+    <form action="" method="POST">
+        Name: <input type="text" name="name" value=""><br>
+        E-mail: <input type="text" name="last" value=""><br>
+        Submit: <input type="submit" name="submit" value="submit"><br>
+
+                </form>
 
 
-    }
+</body>
 
-</script>
+</html>
 
-<form>
-    <input onclick="getcontent()" name="button" id="get content" />
-</form>
-
-<div id="content">
-
-</div>
+<?php
+function pre_p($array)
+{
+    echo '<ore>';
+    print_r($array);
+    echo '</pre>';
+};
