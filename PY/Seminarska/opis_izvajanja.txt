@@ -1,0 +1,41 @@
+OPIS IZVAJANJA SEMINARSKE NALOGE
+
+KORAKI IZVAJANJA:
+
+PRIDOBITEV PODATKOV
+Najprej sem poiskal ustrezne F1 podatke za sezono 2024. Odločil sem se za podatke prvih treh dirk sezone (Bahrajn, Savdska Arabija, Avstralija), ker so bili na voljo in vsebujejo dovolj informacij za analizo.
+
+STRUKTURA PODATKOV
+Ustvaril sem CSV datoteko z naslednjimi stolpci:
+- Dirka, Datum, Dirkac, Ekipa, Startna_pozicija, Koncna_pozicija, Tocke, Najhitrejsi_krog, Cas_dirke, Izpad
+
+PROGRAMIRANJE FUNKCIJ
+Implementiral sem 5 glavnih funkcij:
+- ekipe_in_dirkaci() - uporablja set in dict za organizacijo ekip in dirkačev
+- dirke_po_uspesnosti() - uporablja dict in list za rangiranje dirk
+- najboljsi_dirkaci() - uporablja dict, list in tuple za lestvico dirkačev
+- analiza_napredovanja() - uporablja dict in string za analizo napredka
+- tockovanje_konstruktorjev() - uporablja dict za konstruktorsko prvenstvo
+
+
+PODATKOVNE STRUKTURE
+Zahteva po uporabi vseh petih tipov struktur je zahtevala premišljeno načrtovanje funkcij. Poskrbeti sem moral, da vsaka funkcija smiselno uporablja različne strukture.
+
+REALISTIČNI PODATKI
+Poskrbeti sem moral, da so podatki realistični in se ujemajo z dejanskimi rezultati F1 dirk 2024.
+
+REŠITVE:
+
+- Za branje CSV sem uporabil vgrajene Python funkcije (open, readline, split)
+- Za pretvarjanje tipov sem dodal try/except bloke za obvladovanje napak
+- Vsako funkcijo sem zasnoval tako, da smiselno izkorišča zahtevane podatkovne strukture
+- Dodal sem ustrezno obravnavo napak in izjemnih primerov
+
+REZULTAT:
+Program uspešno analizira 61 zapisov rezultatov F1 dirk in prikazuje smiselne statistike. Koda je razumljiva, dobro komentirana in izpolnjuje vse zahteve naloge brez uporabe zunanjih knjižnic.
+
+PRIDOBLJENA ZNANJA:
+- Delo z osnovnimi Python strukturami brez zunanjih knjižnic
+- Implementacija različnih algoritmov za analizo podatkov
+- Obdelava in čiščenje podatkov
+- Organizacija kode v funkcije z jasno definiranimi nalogami

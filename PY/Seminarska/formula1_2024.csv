@@ -1,0 +1,62 @@
+Dirka,Datum,Dirkac,Ekipa,Startna_pozicija,Koncna_pozicija,Tocke,Najhitrejsi_krog,Cas_dirke,Izpad
+Bahrajn,02.03.2024,Max Verstappen,Red Bull Racing,1,1,25,Ne,1:31:44.625,Nerka,Datum,Dirkac,Ekipa,Startna_pozicija,Koncna_pozicija,Tocke,Najhitrejsi_krog,Cas_dirke,Izpadirka,Datum,Dirkač,Ekipa,Štartna_pozicija,Končna_pozicija,Točke,Najhitrejši_krog,Čas_dirke,Izpad
+Bahrajn,02.03.2024,Max Verstappen,Red Bull Racing,1,1,25,Ne,1:31:44.625,Ne
+Bahrajn,02.03.2024,Sergio Perez,Red Bull Racing,5,2,18,Ne,1:31:59.879,Ne
+Bahrajn,02.03.2024,Carlos Sainz,Ferrari,4,3,15,Ne,1:32:00.477,Ne
+Bahrajn,02.03.2024,Charles Leclerc,Ferrari,2,4,12,Da,1:32:03.216,Ne
+Bahrajn,02.03.2024,George Russell,Mercedes,3,5,10,Ne,1:32:08.459,Ne
+Bahrajn,02.03.2024,Lewis Hamilton,Mercedes,9,6,8,Ne,1:32:18.773,Ne
+Bahrajn,02.03.2024,Lando Norris,McLaren,7,7,6,Ne,1:32:23.540,Ne
+Bahrajn,02.03.2024,Oscar Piastri,McLaren,8,8,4,Ne,1:32:26.667,Ne
+Bahrajn,02.03.2024,Fernando Alonso,Aston Martin,10,9,2,Ne,1:32:33.160,Ne
+Bahrajn,02.03.2024,Lance Stroll,Aston Martin,12,10,1,Ne,1:32:35.492,Ne
+Bahrajn,02.03.2024,Yuki Tsunoda,RB,11,11,0,Ne,1:32:49.476,Ne
+Bahrajn,02.03.2024,Nico Hulkenberg,Haas,15,12,0,Ne,1:32:56.748,Ne
+Bahrajn,02.03.2024,Daniel Ricciardo,RB,14,13,0,Ne,1:33:03.958,Ne
+Bahrajn,02.03.2024,Kevin Magnussen,Haas,13,14,0,Ne,1:33:12.473,Ne
+Bahrajn,02.03.2024,Alexander Albon,Williams,17,15,0,Ne,1:33:15.952,Ne
+Bahrajn,02.03.2024,Valtteri Bottas,Kick Sauber,16,16,0,Ne,1:33:26.199,Ne
+Bahrajn,02.03.2024,Guanyu Zhou,Kick Sauber,19,17,0,Ne,1:33:31.385,Ne
+Bahrajn,02.03.2024,Logan Sargeant,Williams,18,18,0,Ne,1:33:35.802,Ne
+Bahrajn,02.03.2024,Esteban Ocon,Alpine,20,19,0,Ne,1:33:44.410,Ne
+Bahrajn,02.03.2024,Pierre Gasly,Alpine,6,0,0,Ne,0:00:00.000,Da
+Savdska Arabija,09.03.2024,Max Verstappen,Red Bull Racing,1,1,25,Ne,1:20:43.273,Ne
+Savdska Arabija,09.03.2024,Sergio Perez,Red Bull Racing,2,2,18,Ne,1:20:55.500,Ne
+Savdska Arabija,09.03.2024,Charles Leclerc,Ferrari,4,3,16,Da,1:21:02.476,Ne
+Savdska Arabija,09.03.2024,Oscar Piastri,McLaren,7,4,12,Ne,1:21:09.230,Ne
+Savdska Arabija,09.03.2024,George Russell,Mercedes,3,5,10,Ne,1:21:15.380,Ne
+Savdska Arabija,09.03.2024,Lewis Hamilton,Mercedes,8,6,8,Ne,1:21:23.740,Ne
+Savdska Arabija,09.03.2024,Lando Norris,McLaren,6,7,6,Ne,1:21:30.559,Ne
+Savdska Arabija,09.03.2024,Fernando Alonso,Aston Martin,5,8,4,Ne,1:21:35.615,Ne
+Savdska Arabija,09.03.2024,Lance Stroll,Aston Martin,11,9,2,Ne,1:21:40.730,Ne
+Savdska Arabija,09.03.2024,Yuki Tsunoda,RB,9,10,1,Ne,1:21:46.049,Ne
+Savdska Arabija,09.03.2024,Alexander Albon,Williams,13,11,0,Ne,1:21:58.684,Ne
+Savdska Arabija,09.03.2024,Kevin Magnussen,Haas,14,12,0,Ne,1:22:03.491,Ne
+Savdska Arabija,09.03.2024,Daniel Ricciardo,RB,12,13,0,Ne,1:22:07.080,Ne
+Savdska Arabija,09.03.2024,Nico Hulkenberg,Haas,10,14,0,Ne,1:22:12.761,Ne
+Savdska Arabija,09.03.2024,Guanyu Zhou,Kick Sauber,19,15,0,Ne,1:22:19.382,Ne
+Savdska Arabija,09.03.2024,Logan Sargeant,Williams,17,16,0,Ne,1:22:28.190,Ne
+Savdska Arabija,09.03.2024,Valtteri Bottas,Kick Sauber,16,17,0,Ne,1:22:35.927,Ne
+Savdska Arabija,09.03.2024,Esteban Ocon,Alpine,15,18,0,Ne,1:22:37.066,Ne
+Savdska Arabija,09.03.2024,Pierre Gasly,Alpine,18,0,0,Ne,0:00:00.000,Da
+Savdska Arabija,09.03.2024,Carlos Sainz,Ferrari,0,0,0,Ne,0:00:00.000,Da
+Avstralija,24.03.2024,Carlos Sainz,Ferrari,2,1,25,Ne,1:14:36.437,Ne
+Avstralija,24.03.2024,Charles Leclerc,Ferrari,1,2,18,Ne,1:14:42.277,Ne
+Avstralija,24.03.2024,Lando Norris,McLaren,4,3,15,Da,1:14:48.325,Ne
+Avstralija,24.03.2024,Oscar Piastri,McLaren,6,4,12,Ne,1:14:54.619,Ne
+Avstralija,24.03.2024,Sergio Perez,Red Bull Racing,3,5,10,Ne,1:15:01.493,Ne
+Avstralija,24.03.2024,Fernando Alonso,Aston Martin,10,6,8,Ne,1:15:09.243,Ne
+Avstralija,24.03.2024,Lance Stroll,Aston Martin,9,7,6,Ne,1:15:14.978,Ne
+Avstralija,24.03.2024,Yuki Tsunoda,RB,8,8,4,Ne,1:15:18.435,Ne
+Avstralija,24.03.2024,Nico Hulkenberg,Haas,12,9,2,Ne,1:15:25.127,Ne
+Avstralija,24.03.2024,Kevin Magnussen,Haas,13,10,1,Ne,1:15:31.332,Ne
+Avstralija,24.03.2024,Alexander Albon,Williams,11,11,0,Ne,1:15:39.476,Ne
+Avstralija,24.03.2024,Daniel Ricciardo,RB,14,12,0,Ne,1:15:43.193,Ne
+Avstralija,24.03.2024,Pierre Gasly,Alpine,17,13,0,Ne,1:15:48.284,Ne
+Avstralija,24.03.2024,Esteban Ocon,Alpine,15,14,0,Ne,1:15:50.975,Ne
+Avstralija,24.03.2024,Valtteri Bottas,Kick Sauber,16,15,0,Ne,1:15:59.245,Ne
+Avstralija,24.03.2024,Guanyu Zhou,Kick Sauber,18,16,0,Ne,1:16:05.715,Ne
+Avstralija,24.03.2024,Logan Sargeant,Williams,19,0,0,Ne,0:00:00.000,Da
+Avstralija,24.03.2024,Lewis Hamilton,Mercedes,7,0,0,Ne,0:00:00.000,Da
+Avstralija,24.03.2024,Max Verstappen,Red Bull Racing,5,0,0,Ne,0:00:00.000,Da
+Avstralija,24.03.2024,George Russell,Mercedes,20,0,0,Ne,0:00:00.000,Da
